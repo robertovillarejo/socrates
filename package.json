@@ -5,7 +5,7 @@
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "docker-build": "docker build -t i2cmx/atebot:$npm_package_version ."
   },
   "dependencies": {
@@ -16,5 +16,9 @@
     "botkit-plugin-cms": "^1.0.3",
     "dotenv": "^7.0.0",
     "mongoose": "^5.7.10"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "jest": "^25.1.0"
   }
 }
